@@ -1,0 +1,64 @@
+.register {
+  height: 100vh;
+  display: flex;
+  /* border: 1px solid green; */
+  align-items: center;
+  justify-content: center;
+}
+
+.register__main > button {
+  height: 50px;
+  width: 80px;
+  display: block;
+
+  margin: 20px 0 10px 0;
+}
+
+.register__main {
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.register__main > h2 {
+  margin-bottom: 6px;
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.register__main > h4 {
+  margin: 20px 0 10px 0;
+  font-size: 14px;
+}
+
+.register__main > input {
+  width: 300px;
+  height: 25px;
+  outline: none;
+  border: 0.1px solid gray;
+  border-radius: 1px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.register__main > .button__core {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+}
+
+.register__main > a > h6 {
+  font-size: 12px !important;
+}
+
+.register__main > .button__core {
+  width: 115px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 10px 0;
+  font-size: 13px;
+}

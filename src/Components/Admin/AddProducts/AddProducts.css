@@ -1,0 +1,109 @@
+.AddProducts {
+  /* border: 1px solid red; */
+  flex: 0.8;
+
+  background-color: rgb(252, 252, 252);
+  flex-grow: 1;
+  height: 100%;
+  max-height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  min-width: calc(100vw - 275px);
+  /* max-width: calc(100vw - 275px); */
+  width: 100%;
+}
+
+.heading__components {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.147);
+  margin: 0;
+  padding: 5px 0 5px 15px;
+  background-color: white;
+}
+
+.addproducts__main {
+  /* border: 1px solid black; */
+  padding: 20px 3px 10px 10px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+  /* height: 90.5vh; */
+  height: calc(100vh - 145px);
+}
+
+.addproducts__form {
+  border: 1px solid whitesmoke;
+  background-color: white;
+
+  height: 100%;
+  max-height: 550px;
+  max-width: 600px;
+  width: 100%;
+  /* overflow: scroll; */
+  padding: 30px;
+  /* margin-top: 1%; */
+  /* margin-left: 10vw; */
+
+  /* height: 10vh; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.addproducts__form > form > h2 {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.126);
+  padding-bottom: 13px;
+}
+
+.addproducts__form > form > h3 {
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.addproducts__form > form > input {
+  /* border: 2px solid red; */
+  width: 530px;
+  height: 35px;
+  font-size: 15px;
+  outline-color: rgba(45, 45, 179, 0.909);
+  padding: 10px 10px 10px 10px;
+}
+
+.add__button > button {
+  /* border: 2px solid red; */
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  width: 115px;
+  height: 35px;
+}
+
+.add__button {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 855px) {
+  .addproducts__form {
+    /* border: 2px solid red; */
+  }
+
+  .addproducts__form > form > input {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .addproducts__form {
+    /* border: 2px solid red; */
+    overflow: scroll;
+    max-height: 80%;
+  }
+}

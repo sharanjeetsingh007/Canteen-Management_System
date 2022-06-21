@@ -1,0 +1,126 @@
+.userSidebar {
+  /* border: 1px solid purple; */
+  flex: 0.2;
+  /* height: 97.6vh; */
+  height: calc(100vh - 64px);
+  width: 100%;
+  max-width: 275px;
+  min-width: 275px;
+  /* position: fixed; */
+  background-color: #1a2231;
+}
+
+.main__userSidebar > a {
+  /* border: 2px solid rgb(85, 126, 180); */
+  padding: 5px 0 5px 0;
+  list-style: none;
+  text-decoration: none;
+  /* flex-direction: ; */
+  align-items: center;
+  /* justify-content: center; */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__userSidebar > a {
+  cursor: pointer;
+}
+
+.main__userSidebar > a {
+  text-decoration: none;
+  /* pointer-events: none; */
+}
+
+.main__userSidebar > a:hover {
+  background-color: rgb(41, 62, 84);
+}
+
+.active__sidebar__optionsss {
+  background-color: rgb(41, 62, 84);
+  /* border: 3px solid red; */
+}
+
+.main__userSidebar > a:nth-child(1) {
+  margin-top: 45px;
+}
+
+.sidebar__options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* padding: 3px 0 3px 0; */
+  color: white;
+}
+
+.sidebar__options__icon {
+  /* border: 2px solid green; */
+  font-size: 20px;
+  /* margin-right: 15px; */
+  margin-left: 39px;
+
+  /* margin-bottom: 4px; */
+  margin-left: 40px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.sidebar__options__name {
+  margin-left: 25px;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 992px) {
+  .userSidebar {
+    /* border: 1px solid purple; */
+    /* flex: 0.2; */
+    /* height: 97.6vh; */
+    height: 400px;
+    width: 100%;
+    max-width: 100vw;
+    /* min-width: 275px; */
+    /* position: fixed; */
+    /* background-color: #1a2231; */
+  }
+
+  .main__userSidebar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    /* max-width: 80vw; */
+    overflow: scroll;
+
+    /* align-items: center;
+    justify-content: center;
+    margin-top: 0px; */
+  }
+
+  .main__userSidebar > a:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .main__userSidebar > a {
+    /* border: 2px solid rgb(85, 126, 180); */
+    padding: 3px 1px 3px 3px;
+    margin: 1px 0px 1px 1px;
+    /* border: 1px solid red; */
+    /* width: 110px; */
+  }
+
+  .sidebar__options__icon {
+    margin-left: 5px;
+    font-size: 10px;
+  }
+
+  .sidebar__options__name {
+    /* display: none; */
+    font-size: 10px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 80px;
+    /* font-size: 13px; */
+  }
+}

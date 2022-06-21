@@ -1,0 +1,38 @@
+.MyWallet {
+  /* border: 1px solid red; */
+  flex: 0.8;
+  flex-grow: 1;
+  background-color: rgb(252, 252, 252);
+  height: 100%;
+  max-height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  min-width: calc(100vw - 275px);
+  /* max-width: calc(100vw - 275px); */
+  width: 100%;
+}
+
+.mywallet__main {
+  /* border: 2px solid black; */
+  height: calc(100vh - 100px);
+}
+
+.mywallet__card__table {
+  /* border: 4px solid green; */
+
+  padding: 20px 3px 10px 10px;
+}
+
+.mywallet__main__table {
+  border: 1px solid whitesmoke;
+}
+
+.spinner__insider {
+  /* border: 5px solid black; */
+  height: 100vh;
+  max-height: calc(100vh - 155px);
+  max-width: calc(100vw - 330px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,150 @@
+.MyOrders {
+  /* border: 4px solid red; */
+  flex: 0.8;
+  flex-grow: 1;
+  background-color: rgb(252, 252, 252);
+  height: 100%;
+  max-height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  min-width: calc(100vw - 275px);
+  /* max-width: calc(100vw - 275px); */
+  width: 100%;
+
+  /* width: 100%; */
+}
+
+.myorders__main {
+  /* border: 3px solid green; */
+  max-height: 92vh;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.orders__main {
+  /* border: 20px solid purple; */
+  padding: 20px 3px 10px 10px;
+  max-height: 88vh;
+  height: 100%;
+}
+
+.cards__row__myorders {
+  /* border: 2px solid red; */
+  height: 100%;
+}
+
+.cards__row__myorders__table {
+  border: 1px solid whitesmoke;
+}
+
+.spinner__insider {
+  /* border: 5px solid black; */
+  height: 100vh;
+  max-height: calc(100vh - 155px);
+  max-width: calc(100vw - 330px);
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1280px) {
+  .row__table__username__hardcode {
+    /* border: 2px solid red; */
+    width: 165px !important;
+  }
+  .row__table__name__hardcode {
+    width: 130px !important;
+  }
+  .row__table__image__hardcode {
+    width: 200px !important;
+  }
+  .row__table__price__hardcode {
+    width: 130px !important;
+  }
+  .row__table__total__hardcode {
+    width: 150px !important;
+  }
+  .row__table__quantity__hardcode {
+    width: 160px !important;
+  }
+
+  .row__table__status__hardcode {
+    width: 0px !important;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .row__table__username__hardcode {
+    /* border: 2px solid red; */
+    width: 11px !important;
+  }
+  .row__table__name__hardcode {
+    width: 100px !important;
+  }
+  .row__table__image__hardcode {
+    width: 170px !important;
+  }
+  .row__table__price__hardcode {
+    width: 100px !important;
+  }
+  .row__table__total__hardcode {
+    width: 110px !important;
+  }
+  .row__table__quantity__hardcode {
+    width: 110px !important;
+    /* border: 2px solid red; */
+  }
+
+  .row__table__status__hardcode {
+    width: 0px !important;
+  }
+
+  .cards__row__myorders__table {
+    width: 50% !important;
+    max-width: 200px !important;
+    /* border: 2px solid red; */
+  }
+
+  .cards__row__myorders {
+    /* border: 2px solid red; */
+    overflow: scroll;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .row__table__username__hardcode {
+    /* border: 2px solid red; */
+    width: 11px !important;
+  }
+  .row__table__name__hardcode {
+    width: 100px !important;
+  }
+  .row__table__image__hardcode {
+    width: 170px !important;
+  }
+  .row__table__price__hardcode {
+    width: 100px !important;
+  }
+  .row__table__total__hardcode {
+    width: 110px !important;
+  }
+  .row__table__quantity__hardcode {
+    width: 110px !important;
+    /* border: 2px solid red; */
+  }
+
+  .row__table__status__hardcode {
+    width: 0px !important;
+  }
+
+  .cards__row__myorders__table {
+    width: 50% !important;
+    max-width: 200px !important;
+    /* border: 2px solid red; */
+  }
+
+  .cards__row__myorders {
+    /* border: 2px solid red; */
+    overflow: scroll;
+  }
+}

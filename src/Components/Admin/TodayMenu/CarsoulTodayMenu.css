@@ -1,0 +1,31 @@
+/* .inner__carsoul__custom {
+  border: 3px solid purple;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative;
+} */
+
+.carousel .thumbs-wrapper {
+  margin: 0px;
+  overflow: hidden;
+  display: none;
+}
+
+.carousel .slide .legend {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 40px;
+  left: 40%;
+  margin-left: 0%;
+  width: 90%;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.25;
+  transition: opacity 0.35s ease-in-out;
+}

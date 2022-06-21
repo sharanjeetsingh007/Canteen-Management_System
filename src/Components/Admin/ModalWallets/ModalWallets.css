@@ -1,0 +1,27 @@
+.body__modalwallet {
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* .body__col__left {
+  flex: 0.5;
+}
+
+.body__col__right {
+  flex: 0.5;
+} */
+
+.body__col__left > input {
+  max-width: 58px;
+  text-align: center;
+}
+
+.body__col__left > h2 {
+  font-size: 18px;
+}
+
+.ModalWallets__custom > .modal-dialog > .modal-content {
+  width: 456px !important;
+}

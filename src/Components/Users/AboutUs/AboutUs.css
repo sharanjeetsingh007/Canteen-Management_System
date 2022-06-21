@@ -1,0 +1,33 @@
+.AboutUs {
+  /* border: 1px solid red; */
+  flex: 0.8;
+  flex-grow: 1;
+  background-color: rgb(252, 252, 252);
+  height: 100%;
+  max-height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  min-width: calc(100vw - 275px);
+  /* max-width: calc(100vw - 275px); */
+  width: 100%;
+}
+.aboutus__main {
+  /* border: 2px solid red; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  /* height: 92vh; */
+  height: calc(100vh - 145px);
+}
+
+.adoutcard {
+  margin-top: 50px;
+  /* border: 2px solid green; */
+  background-color: white;
+  padding: 20px;
+  /* width: 500px; */
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adoutcard > h4 {
+  font-size: 20px;
+}

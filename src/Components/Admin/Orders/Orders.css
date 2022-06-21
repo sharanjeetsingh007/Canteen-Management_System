@@ -1,0 +1,46 @@
+.AdminOrders {
+  /* border: 1px solid red; */
+  flex: 0.8;
+  height: 100%;
+  max-height: calc(100vh - 65px);
+  min-height: calc(100vh - 65px);
+  min-width: calc(100vw - 275px);
+  /* max-width: calc(100vw - 275px); */
+  width: 100%;
+  background-color: rgb(252, 252, 252);
+  flex-grow: 1;
+}
+
+.adminorders__main {
+  /* border: 4px solid black; */
+  padding: 20px 3px 10px 10px;
+  max-height: 88.5vh;
+  height: calc(100vh - 100px);
+}
+
+/* .table__bodys {
+  display: flex;
+  flex-direction: column;
+} */
+
+.cards__row__table__orders {
+  max-height: 88vh;
+  height: 100%;
+  max-height: calc(100vh - 130px);
+  /* border: 2px solid black; */
+  overflow: scroll;
+  /* max-width: 90vw;
+  width: 100%; */
+  /* overflow-x: scroll; */
+}
+
+.spinner__insider {
+  /* border: 5px solid black; */
+  height: 100vh;
+  max-height: calc(100vh - 155px);
+  max-width: calc(100vw - 330px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

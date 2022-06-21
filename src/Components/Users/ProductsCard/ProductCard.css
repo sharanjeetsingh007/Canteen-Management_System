@@ -1,0 +1,39 @@
+.ProductCard {
+  /* border: 3px solid green; */
+  /* width: 25%; */
+  /* flex: 0 0 20.333333%; */
+  /* width: 500px;
+  max-width: 500px; */
+  /* margin-left: 10px !important; */
+  margin-bottom: 40px;
+  /* max-width: 250px;
+  max-height: 250px; */
+}
+
+/* .ProductCard:nth-child(1) {
+  margin-left: 0 !important;
+}
+
+.ProductCard:nth-child(4n + 5) {
+  border: 4px solid green;
+  margin-left: 0 !important;
+} */
+
+/* .card__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__name__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.productcard__card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}

@@ -1,0 +1,11 @@
+.content {
+  /* border: 1px solid green; */
+  flex: 0.8;
+  height: 100vh;
+  display: flex;
+}
+
+.content > h1 {
+  margin: 0 auto;
+  margin-top: 40px;
+}

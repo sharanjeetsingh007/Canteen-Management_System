@@ -1,0 +1,48 @@
+/* .ModalPayment {
+  border: 3px solid red;
+} */
+
+.payment__modal__custom > .modal-dialog > .modal-content {
+  /* border: 3px solid red; */
+  height: 660px;
+  width: 100% !important;
+  max-width: 610px !important;
+  overflow: scroll;
+}
+
+.modalpayment__body {
+  /* border: 2px solid red; */
+  margin-bottom: 50px;
+  max-height: 400px;
+}
+
+.modalpayment__body .credit-card {
+  /* border: 3px solid red; */
+  margin-top: 0 !important;
+  top: 0 !important;
+  max-height: 400px !important;
+  height: 200px !important;
+
+  /* top: 70px; */
+}
+
+.modalpayment__body .card {
+  /* border: 3px solid purple; */
+  height: 320px;
+  margin-top: 15px !important;
+}
+
+.payment-form {
+  /* border: 3px solid purple; */
+  margin-top: 35px !important;
+}
+
+.modalpayment__body__total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalpayment__body__total > h3:nth-child(2) {
+  margin-left: 10px;
+}

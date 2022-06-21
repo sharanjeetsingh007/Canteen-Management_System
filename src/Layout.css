@@ -1,0 +1,31 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.layout__body {
+  /* position: relative; */
+  display: flex;
+}
+
+@media only screen and (max-width: 992px) {
+  .layout__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* @media only screen and (max-width: 414px) {
+  .allproducts__main {
+    border: 2px solid red;
+
+    display: grid;
+    grid-template-columns: repeat(2, 198px);
+
+    column-gap: 2px;
+  }
+} */
