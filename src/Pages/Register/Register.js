@@ -115,8 +115,9 @@ export default function Register() {
                             .catch((error) => {
                                 const errorCode = error.code;
                                 const errorMessage = error.message;
-                                alert(errorMessage)
                                 setSpinner(false)
+
+                                alert(errorMessage)
 
                                 // ..
                             });
@@ -124,18 +125,24 @@ export default function Register() {
                     .catch((error) => {
                         const errorCode = error.code;
                         const errorMessage = error.message;
+                        setSpinner(false)
+                        setName("")
+                        setEmail("")
+                        setPassword("")
+                        setRepassword("")
+
                         alert(errorMessage)
                         // ..
                     });
             }
 
         } catch (e) {
+
             alert("Error adding document: ", e);
 
         }
 
     }
-
 
 
     return (<>{spinner == true ? <LoadingSpinnerMain /> :

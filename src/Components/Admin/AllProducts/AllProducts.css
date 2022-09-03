@@ -27,7 +27,7 @@
   /* border: 10px solid black; */
   padding: 20px 3px 10px 10px;
   display: grid;
-  grid-template-columns: repeat(2, 500px) !important;
+  grid-template-columns: repeat(2, 600px) !important;
   align-items: center;
   justify-content: center;
   column-gap: 2px;
@@ -140,6 +140,24 @@
 
     display: grid;
     grid-template-columns: repeat(2, 470px) !important;
+
+    column-gap: 2px;
+    /* overflow: scroll; */
+  }
+}
+
+@media only screen and (max-width: 1212px) {
+  .allproducts__main {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .allproducts__main__inner {
+    /* border: 2px solid blue; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 400px) !important;
 
     column-gap: 2px;
     /* overflow: scroll; */

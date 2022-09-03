@@ -35,18 +35,51 @@ export default function Login({ roleValue }) {
 
     // finding current user from database
     const filterHandle = async (data, user) => {
+        return new Promise((resolve, reject) => {
+            const currentId = data.filter(item => item.uid === user.uid);
+            if (currentId.length !== 0) {
+                // console.log(currentId, "currentId")
+                resolve(currentId[0].role)
+
+                // return currentId[0].role;
 
 
-        const currentId = await data.filter(item => item.uid === user.uid);
+
+            }
+            else {
+                reject("No user found")
+
+                // return alert("No user found")
+            }
+
+
+        })
+        // console.log(data, 'data')
+
 
         // console.log(currentId[0].role, 'currentId under filterHandle')
+        // if (currentId.length !== 0) {
+        // console.log(currentId, "currentId")
+        // setRoleState(currentId[0].role)
+        // return currentId[0].role;
 
-        return currentId[0].role;
+        // }
+        // else {
+        //     return alert("No user found")
+        // }
 
     }
 
+
+
+
     // login function
     const handleLogin = async (e) => {
+
+        if (!email || !password) {
+            return alert("Email and Password needed to login")
+        }
+
         e.preventDefault();
 
         setSpinner(true);
@@ -61,16 +94,13 @@ export default function Login({ roleValue }) {
                 const user = userCredential.user;
 
 
-                // console.log(user, "llogin user👹")
 
 
 
                 filterHandle(userFirestore, user)
                     .then((response) => {
-                        // console.log(response, 'response promise')
                         // storing the role for protected routes usage
                         localStorage.setItem('role', response);
-
                         // redux dispatch state to current user
                         dispatch(login({
                             email: user.email,
@@ -83,7 +113,8 @@ export default function Login({ roleValue }) {
 
 
                     }).catch((err) => {
-                        alert(err.message)
+                        alert(err)
+
                         setSpinner(false);
 
 
@@ -91,11 +122,18 @@ export default function Login({ roleValue }) {
 
                 // redux for protected routes
                 dispatch(changeBooleanTrue());
+
+
+                // const role = localStorage.getItem('role');
+                // console.log(role, 'role get item')
+                // navigating to user || admin
+
+
+
                 // ...
             }).then(() => {
 
                 const role = localStorage.getItem('role');
-
                 // navigating to user || admin
                 role == 'user' ? navigate(state?.path || "/home/user/home") : navigate(state?.path || "/home/admin/home");
                 setSpinner(false);
@@ -105,6 +143,7 @@ export default function Login({ roleValue }) {
                 const errorMessage = error.message;
                 // error then show alert in page
                 if (errorMessage) {
+                    alert(errorMessage)
                     setSpinner(false);
 
                     setAlertState(true);

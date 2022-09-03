@@ -11,7 +11,6 @@ function ProtectedRoutesUser({ loginUser, booleanState }) {
     // Getting role value from storage to protect and route to user
     const getRole = localStorage.getItem('role')
 
-
     const location = useLocation();
 
     return getRole == 'user' ? <Outlet /> : <Navigate to='/' replace={true} state={{ path: location.pathname }} />

@@ -59,7 +59,7 @@ export default function UserHome() {
                         display: spinner == true ? "flex" : "",
                         alignItems: spinner == true ? "center" : "none",
                         justifyContent: spinner == true ? "center" : "none",
-                        height: '90vh'
+                        height: '88vh'
 
                     }}
                 >
